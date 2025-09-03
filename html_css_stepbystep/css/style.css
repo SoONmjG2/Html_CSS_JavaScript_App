@@ -1,24 +1,86 @@
 ﻿body {
-    font-family: "맑은 고딕", "돋움", "굴림";               
-    /*
-    background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment
-       bg-images : url('../images/bg.jpg') 
-       bg-repeat : no-repeat : 
-       bg-position (배경 위치) : left(가로위치-왼쪽) top(세로위치-상단) : 
-       bg-attachment (배경 고정) : fixed 페이지를 스크롤해도 배경은 움직이지 않음
-    */
-    
-    /*
-    background-size
-    : cover
-        비율 유지하며 요소 전체를 덮음
-        이미지 일부가 잘릴 수 있음
-        풀스크린 배경에 최적
-    : contain
-        비율 유지하며 요소 안에 완전 포함
-        여백이 생길 수 있음
-        로고, 아이콘에 최적
-    */
-    
+  /* backgroud */
+  font: 14px/1.6 'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+  color:#333;
+  background:#000 url('../images/bg.jpg') no-repeat center center fixed;
+  /* background-size */
+  background-size: cover;
+}
+
+#wrapper {
+  width:620px;
+  margin:56px auto;
+}
+
+nav {
+  background:#1f1f1f;
+}
+
+article {
+  position:relative;
+  padding:22px 26px 30px;
+  background: rgba(255, 255, 255, 0.86);
+  border:2px solid #000;     
+  border-top:0;             
+  box-shadow:none;
+  margin:0;
+}
+
+nav ul {
+  list-style:none;
+  display:flex;
+  margin: 0;     
+  padding: 0;    
+}
+
+nav ul li {
+  flex:1 1 0;
+  border-right:1px solid #3a3a3a;
+}
+
+nav a {
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  padding:10px 0;
+  color:#e9e9e9;
+  font-size:13px;
+}
+
+nav a:hover {
+  background:#2d2d2d;
+}
+
+nav a.current {
+  background:#efefef;
+  color:#222;
+}
+
+
+section {
+  border-radius:3px;
+  overflow:hidden;
+  box-shadow:0 8px 24px rgba(0,0,0,.25); 
+}
+
+footer {
+  background:#555;
+  color:#ddd;
+  font-size:11px;
+  padding:10px 14px;
+  border-radius:0 0 2px 2px;
+  border:2px solid #000;   
+  border-top:0;
+}
+
+
+h2 {
+  font-size:18px;
+  margin:2px 0 14px;
+  line-height:28px;
+  min-height:28px;
+  padding-left:44px;
+  background:url('../images/icon.png') no-repeat 8px 50%;
+  background-size:28px 28px;
 }
 
